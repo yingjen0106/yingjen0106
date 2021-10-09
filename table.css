@@ -1,0 +1,17 @@
+table,
+th,
+td {
+  border: 1px solid black;
+  text-align: center;
+}
+table {
+  border-collapse: collapse;
+}
+.column1,
+.column2,
+.column3 {
+  width: 123px;
+}
+.column4 {
+  width: 300px;
+}
