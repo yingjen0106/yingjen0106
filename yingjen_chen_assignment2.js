@@ -7,10 +7,10 @@ const itemsObject = [
 //doubles
 let arr1 = [];
 for (const elem of itemsObject) {
-  let val = {};
-  val["quantity"] = elem["quantity"] * 2;
-  val["price"] = elem["price"] * 2;
-  arr1.push(val);
+  let obj = {};
+  obj["quantity"] = elem["quantity"] * 2;
+  obj["price"] = elem["price"] * 2;
+  arr1.push(obj);
 }
 
 console.log(arr1);
