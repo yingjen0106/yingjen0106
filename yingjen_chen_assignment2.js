@@ -4,7 +4,7 @@ const itemsObject = [
   { quantity: 5, price: 400 },
 ];
 
-//new array - doubles
+//doubles
 let arr1 = [];
 for (const elem of itemsObject) {
   let val = {};
