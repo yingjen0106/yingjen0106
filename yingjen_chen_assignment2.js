@@ -24,11 +24,11 @@ for (const elem of itemsObject) {
 console.log(arr2);
 
 // total value
-const sum = itemsObject
-  .map((item) => item.price)
-  .reduce((prev, curr) => prev + curr, 0);
+let total = itemsObject.reduce(function(prev,cur){
+    return prev + cur.price;
+},0);
 
-console.log(sum);
+console.log(total);
 
 // string
 const string =
