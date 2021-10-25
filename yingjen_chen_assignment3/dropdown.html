@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <select id="selectcity">
+      <option>choose a city</option>
+    </select>
+    <script>
+      const dropDownList = [
+        { value: "newark", content: "Newark" },
+        { value: "santaClara", content: "Santa Clara" },
+        { value: "unionCity", content: "Union City" },
+        { value: "albany", content: "Albany" },
+        { value: "dalyCity", content: "Daly City" },
+        { value: "sanJose", content: "San Jose" },
+      ];
+
+      let city = document.getElementById("selectcity");
+
+      for (let i = 0; i < dropDownList.length; i++) {
+        city.innerHTML =
+          city.innerHTML +
+          '<option value="' +
+          dropDownList[i]["value"] +
+          '">' +
+          dropDownList[i]["content"] +
+          "</option>";
+      }
+    </script>
+  </body>
+</html>

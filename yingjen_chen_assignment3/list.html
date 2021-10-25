@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>but</title>
+  </head>
+  <body>
+    <ul id="unorderedlist"></ul>
+    <ol id="orderedlist"></ol>
+
+    <script>
+      const list = ["HTML", "JavaScript", "CSS", "React", "Redux", "Java"];
+
+      let ul = document.getElementById("unorderedlist");
+
+      for (let i = 0; i < list.length; i++) {
+        let lists = list[i];
+        let li = document.createElement("li");
+        li.appendChild(document.createTextNode(lists));
+        ul.appendChild(li);
+      }
+
+      let listofLanguage = [];
+      let orderedlist = document.getElementById("orderedlist");
+
+      list.forEach(function (element) {
+        listofLanguage.push("<li>" + element + "</li>");
+      });
+      orderedlist.innerHTML = listofLanguage.join("");
+    </script>
+  </body>
+</html>

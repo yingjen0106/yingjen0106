@@ -1,0 +1,15 @@
+table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+td,
+th {
+  border: 2px solid rgb(189, 208, 212);
+}
+
+thead tr {
+  height: 40px;
+  background-color: rgb(221, 217, 217);
+}
